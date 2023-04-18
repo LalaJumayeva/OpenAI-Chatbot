@@ -1,0 +1,12 @@
+.brands{
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands img{
+    padding: 17px;
+}

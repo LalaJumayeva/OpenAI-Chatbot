@@ -1,0 +1,113 @@
+.whatgpt {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    font-family: var(--font-family);
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 4% 26%, rgba(68, 26, 147, 1) 0%, rgba(2, 1, 2, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 4% 26%, rgba(68, 26, 147, 1) 0%, rgba(2, 1, 2, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 4% 26%, rgba(68, 26, 147, 1) 0%, rgba(2, 1, 2, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 4% 26%, rgba(68, 26, 147, 1) 0%, rgba(2, 1, 2, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 4% 26%, rgba(68, 26, 147, 1) 0%, rgba(2, 1, 2, 1) 100%);
+
+}
+
+.gpt_feature {
+    padding-right: 20px;
+}
+
+
+.gpt_feature .feature_titles {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.gpt_feature .feature_text {
+    width: 60%;
+}
+
+
+
+.gradient_text {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 510px;
+}
+
+.whatgpt_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.whatgpt_heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+}
+
+.whatgpt_container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+
+    .whatgpt_heading h1{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .whatgpt {
+        padding: 10px;
+    }
+
+    .gpt_feature .feature_titles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .gpt_feature {
+        padding-right: 0;
+    }
+
+    .gpt_feature .feature_text {
+        width: 100%;
+    }
+
+    .whatgpt_heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .whatgpt_container {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .whatgpt_heading h1{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,152 @@
+div {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_links_container a {
+    color: rgba(255, 255, 255, 0.679);
+}
+
+.navbar_links_container a:first-child {
+    color: white;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    height: calc(100vh - 115px);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-bar button {
+    border: solid 0.5px white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    color: rgba(255, 255, 255, 0.837);
+}
+
+.side-bar button:hover{
+    color: black;
+    background: rgba(255, 255, 255, 0.837);
+    transition: 0.2s;
+}
+
+nav{
+    border-top: solid 0.5px white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.history {
+    padding: 10px;
+    margin: 15px;
+    height: 100%;
+}
+
+.history li{
+    font-family: var(--font-family);
+    list-style-type: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.main {
+    height: calc(100vh - 115px);
+    width: 80%;
+    background: #12032a;
+    color: rgba(255, 255, 255, 0.837);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.info{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+
+}
+
+.bottom_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+input{
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.0.05) 0 54px 55px;
+    color: rgba(255, 255, 255, 0.837);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#submit:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feed{
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.feed li{
+    display: flex;
+    background-color: #3e1c74;
+    width: 100%;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.feed p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    text-align: left;
+}
+
+.feed p.role{
+    min-width: 100px;
+}

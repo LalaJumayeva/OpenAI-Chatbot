@@ -1,0 +1,152 @@
+.gpt_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.navbar_links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar_links_logo {
+    margin-right: 2rem;
+}
+
+
+#mainlogo {
+    width: 70px;
+}
+
+.navbar_links_continer {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.navbar_links_container a,
+.navbar_sign a,
+.navbar_menu a {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar_sign button,
+.navbar_menu button {
+    padding: 0.7rem 1.2rem;
+    color: white;
+    background: rgb(126, 4, 182);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar_sign button:hover,
+.navbar_menu button:hover {
+    background: rgb(105, 3, 152);
+    transition: 0.5s;
+}
+
+.navbar_menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.navbar_menu_container_links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 1rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 230px;
+    border-radius: 8px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar_menu_container a {
+    margin: 1rem 0;
+
+}
+
+.navbar_menu-sign {
+    display: none;
+}
+
+.navbar_links_container a:last-child {
+    color: rgb(126, 4, 182);
+    animation: chat 1s infinite;
+}
+
+@keyframes chat {
+    50% {
+        color: rgb(161, 12, 231);
+    }
+}
+
+.navbar_menu_container_links .chat {
+
+    color: rgb(126, 4, 182);
+    animation: chatMenu 1s infinite;
+}
+
+@keyframes chatMenu {
+    50% {
+        color: rgb(161, 12, 231);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .navbar_links_container,
+    .navbar_sign {
+        display: none;
+    }
+
+    .navbar_menu {
+        display: flex;
+    }
+
+    .gpt_navbar {
+        padding: 2rem 3.5rem;
+    }
+
+    .navbar_menu-sign {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt_navbar {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {}
