@@ -1,18 +1,15 @@
 const express = require('express');
 const cors = require('cors');
+const fetch = require('node-fetch');
 require('dotenv').config();
 const app = express();
-const PORT = 8000;
-app.use(express.json());
-app.use(cors());
-
-
-
 const API_KEY = process.env.API_KEY;
 
-app.use(express.static('public'));
+app.use(express.json());
+app.use(cors());
+app.use(express.static('./public'));
 
-app.post('/completions', async (req, res) => {
+module.exports = async (req, res) => {
   const options = {
     method: "POST",
     headers: {
@@ -34,6 +31,4 @@ app.post('/completions', async (req, res) => {
     console.error(error);
     res.status(500).send({ error: "Something went wrong" });
   }
-});
-
-app.listen(PORT, () => console.log("Server is running on PORT " + PORT));
+};
