@@ -8,10 +8,10 @@ const Menu = () => {
   return (
     <>
       <Link to="/">Home</Link>
-      <Link to="/#whatgpt">What is ChatGPT?</Link>
-      <Link to="/#possibility">Open AI</Link>
-      <Link to="/#blog">Case Studies</Link>
-      <Link to="/#footer">Library</Link>
+      <a href="/#whatgpt">What is ChatGPT?</a>
+      <a href="/#possibility">Open AI</a>
+      <a href="/#blog">Case Studies</a>
+      <a href="/#footer">Library</a>
       <Link to="/chatting">Chat with AI</Link>
     </>
   );
