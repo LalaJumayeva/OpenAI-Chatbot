@@ -4,20 +4,18 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import mainlogo from '../../assets/mainlogo.png';
 import { Link } from 'react-router-dom';
 
-
 const Menu = () => {
   return (
     <>
-      <a href="/">Home</a>
-      <a href="/#whatgpt">What is ChatGPT?</a>
-      <a href="/#possibility">Open AI</a>
-      <a href="/#blog">Case Studies</a>
-      <a href="/#footer">Library</a>
-      <a href="/chatting">Chat with AI</a>
+      <Link to="/">Home</Link>
+      <Link to="/#whatgpt">What is ChatGPT?</Link>
+      <Link to="/#possibility">Open AI</Link>
+      <Link to="/#blog">Case Studies</Link>
+      <Link to="/#footer">Library</Link>
+      <Link to="/chatting">Chat with AI</Link>
     </>
-  )
-}
-
+  );
+};
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
